@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<style>
+button {
+  background-color: #050505;
+
+  color: white;
+  padding: 8px 5px;
+  margin: 4px 0;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  opacity: 0.9;
+  border-radius: 12px;
+}
+
+input[type=text], textarea{
+  width: 40%;
+  padding: 10px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+navbar {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  overflow: auto;
+}
+
+/* Navigation links */
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: blue;
+  text-decoration: none;
+  font-size: 17px;
+  width: 25%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+  text-align: center; /* If you want the text to be centered */
+}
+
+/* Add a background color on mouse-over */
+.navbar a:hover {
+  border-bottom-style: solid;
+  border-bottom-color: blue;
+}
+
+
+/* Style the current/active link */
+.navbar a.active {
+ 
+  border-bottom-style: solid;
+  border-bottom-color: blue;
+ 
+
+}
+
+/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left; /* If you want the text to be left-aligned on small screens */
+  }
+}
+</style>
+<body>
+<div style="height: 80px; background-color: #050505;">
+    <h1 style="color: aliceblue; padding-top: 25px;"> <center>Organization</center></h1>
+</div>
+  
+
+<div style="padding-left: 20%; padding-right: 20%; padding-top: 5px;">
+    <h2> <center>Job Details</center></h2>
+    <label for="Name"><b>Name</b></label><br>
+    <input type="text" placeholder="Enter Name"  name="Name" required><br>
+
+
+    <label for="Location"><b>Location</b></label><br>
+    <input type="text"placeholder="Enter Location"  name="Location" required><br>
+
+    <label for="Salary"><b>Salary</b></label><br>
+    <input type="text" placeholder="Enter Salary" name="Salary" required><br>
+
+    <label for="Catogory"><b>Catogory</b></label><br>
+    <input type="text" placeholder="Enter Catogory" name="Catogory" required><br>
+
+    <label for="Discription"><b>Description</b></label><br>
+    <textarea class="form-control" name="Discription" id="" rows="3"></textarea><br>
+
+    <div style="float: right; width: 30%;">
+    <button type="submit" class="signupbtn">Prev</button>
+    <button type="submit" class="signupbtn" onClick="location.href='RequiredSkills.html'">Next</button>
+
+    </div>
+</div>
+
+</body>
+</html>

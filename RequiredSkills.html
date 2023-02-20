@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<style>
+button {
+  background-color: #050505;
+
+  color: white;
+  padding: 8px 5px;
+  margin: 4px 0;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  opacity: 0.9;
+  border-radius: 12px;
+}
+
+input[type=text], input[type=password] {
+  width: 40%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+  
+}
+navbar {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  overflow: auto;
+}
+
+/* Navigation links */
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: blue;
+  text-decoration: none;
+  font-size: 17px;
+  width: 25%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+  text-align: center; /* If you want the text to be centered */
+}
+
+/* Add a background color on mouse-over */
+.navbar a:hover {
+  border-bottom-style: solid;
+  border-bottom-color: blue;
+}
+
+
+/* Style the current/active link */
+.navbar a.active {
+ 
+  border-bottom-style: solid;
+  border-bottom-color: blue;
+ 
+
+}
+
+/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left; /* If you want the text to be left-aligned on small screens */
+  }
+}
+</style>
+<body>
+<div style="height: 80px; background-color: #050505;">
+    <h1 style="color: aliceblue; padding-top: 25px;"> <center>Required Skills</h1>
+</div>
+
+
+    
+<div style="padding-left: 20%; padding-right: 20%; padding-top: 5px;">
+    <h2> <center>Required Skills</center></h2>
+    <label for="Experiance 1"><b>Skill 1</b></label><br>
+    <input type="text" placeholder="Enter Exp"  name="Experiance 1" required><br>
+
+    <label for="Experiance 2"><b>Skill 2</b></label><br>
+    <input type="text"placeholder="Enter Exp"  name="Experiance 2" required><br>
+
+    <label for="Experiance 3"><b>Skill 3</b></label><br>
+    <input type="text" placeholder="Enter Exp" name="Experiance 3" required><br>
+
+    <div style="float: right; width: 30%;">
+    <button type="submit" class="signupbtn">Cancel</button>
+    <button type="submit" class="signupbtn" onclick="location.href='orgp.html'">Next</button>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html>
+<style>
+.navbar {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  overflow: auto;
+}
+
+navbar {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    overflow: auto;
+}
+.updateprofilebtn {
+    margin-top: 3%;
+    margin-left: 50%;
+    width: 200px;
+    border-radius: 0%;
+}
+.main {
+  text-align: center;
+  justify-content: center;
+  
+  padding-top: 90px;
+ 
+}
+
+
+
+.organization{
+  margin-top: 50px;
+  background-color: #050218;
+  border: none;
+  width: 50%;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 15px;
+
+}
+.welcome
+{
+  position:relative;
+  font-size: 35px;
+
+}
+.applicant{
+  margin-top: 100px;
+  background-color: #050218;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  width: 50%;
+  font-size: 16px;
+
+  border-radius: 12px;
+  /* position:relative; */
+}
+
+.header {
+  padding: 20px;
+  text-align: center;
+  background: #000000;
+  color: white;
+  font-size: 30px;
+}
+
+.general_details {
+  padding: 20px;
+  text-align: center;
+ margin-bottom: 50px;
+  font-size: 30px;
+  font-weight: bold;
+}
+.job_details{
+  padding: 20px;
+  text-align: center;
+ margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.Cancel{
+  align-items: center;
+  border: #000;
+}
+
+.form-control
+{
+  width: 30%;
+  border-radius: 0%;
+  background-color: #ECE8E7;
+}
+
+/* Style the navigation menu */
+.navbar {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  overflow: auto;
+}
+
+/* Navigation links */
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: blue;
+  text-decoration: none;
+  font-size: 17px;
+  width: 25%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+  text-align: center; /* If you want the text to be centered */
+}
+
+/* Add a background color on mouse-over */
+.navbar a:hover {
+  border-bottom-style: solid;
+  border-bottom-color: blue;
+}
+
+
+/* Style the current/active link */
+.navbar a.active {
+ 
+  border-bottom-style: solid;
+  border-bottom-color: blue;
+ 
+
+}
+
+/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left; /* If you want the text to be left-aligned on small screens */
+  }
+}
+
+.jobsofuser{
+  font-weight: 500;
+  margin-left: 5%;
+  margin-top: 50px;
+  margin-bottom: 3%;
+  color: #000;
+}
+
+.card-body
+{
+  background: #ECE8E7;
+}
+
+#card2{
+  margin-top: 2%;
+}
+
+
+
+#cardbtn
+{
+  text-align: center;
+  margin-left: 50%;
+  align-items: center; 
+  /* align-self: center; */
+  /* align-content: center; */
+  /* ruby-align: center; */
+  
+}
+
+.loginmain{
+  height: 100%;
+  width: 100%;
+  
+  background-color:black;
+}
+
+
+#cont
+{
+  margin: 0 auto; /* Added */
+  float: none; /* Added */
+  margin-bottom: 10px; /* Added */
+}
+
+
+
+.background{
+  width: 430px;
+  height: 520px;
+  color: #000;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  top: 50%;
+}
+.background .shape{
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.signuplogin{
+  height: 600px;
+  width: 400px;
+  background-color: rgba(255,255,255,0.13);
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255,255,255,0.1);
+  box-shadow: 0 0 40px rgba(8,7,16,0.6);
+  padding: 50px 35px;
+}
+.loginform{
+  height: 520px;
+  width: 400px;
+  background-color: rgba(255,255,255,0.13);
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255,255,255,0.1);
+  box-shadow: 0 0 40px rgba(8,7,16,0.6);
+  padding: 50px 35px;
+}
+form *{
+  font-family: 'Poppins',sans-serif;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  outline: none;
+  border: none;
+}
+.h3signup{
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 42px;
+  text-align: center;
+  margin-bottom: 5%;
+}
+.h3login{
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 42px;
+  text-align: center;
+  margin-bottom: 20%;
+}
+
+.usernamediv{
+  margin: 5%;
+}
+.emaildiv
+{
+  margin-top: 3%;
+  margin-left: 5%;
+}
+.emailspan{
+  font-weight: bold;
+}
+.contactdiv{
+  margin-top: 2%;
+  margin-left: 5%;
+}
+
+.educationdiv{
+  margin-top: 2%;
+  margin-left: 5%;
+  font-weight: bold;
+}
+.edudiv{
+  
+  margin-left: 5%;
+}
+
+.skillsdev
+{
+  margin-top: 2%;
+  font-weight: bold;
+  margin-left: 5%;
+}
+
+.skilldiv
+{
+
+margin-left: 5%;
+}
+
+.experiencediv{
+  margin-top: 2%;
+  margin-left: 5%;
+  font-weight: bold;
+}
+.exp1
+{
+  margin-left: 5%;
+ 
+}
+.updateprofilebtn
+{
+  margin-top: 3%;
+  margin-left: 50%;
+  width: 200px;
+  border-radius: 0%;
+
+}
+.contactspan
+{
+  font-weight: bold;
+}
+label{
+  display: block;
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+}
+.loginInput{
+  display: block;
+  height: 50px;
+  width: 100%;
+  /* background-color: rgba(255,255,255,0.07); */
+  border-radius: 25px;
+  padding: 0 10px;
+  margin-top: 8px;
+  color: #000;
+  font-size: 14px;
+  font-weight: 300;
+  border: 1px solid #ccc;
+  border-color: #676666;
+
+}
+::placeholder{
+  color: #000000;
+}
+.singupinput{
+  display: block;
+  height: 50px;
+  width: 100%;
+  /* background-color: rgba(255,255,255,0.07); */
+  border-radius: 25px;
+  padding: 0 10px;
+  margin-top: 20px;
+  color: #000;
+  font-size: 14px;
+  font-weight: 300;
+  border: 1px solid #ccc;
+  border-color: #676666;
+  
+}
+.loginbtn{
+  margin-top: 50px;
+  width: 100%;
+  background-color: #14acf2;
+  color: #e6e5eb;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  border-radius: 25px;
+  margin-bottom: 25px;
+  
+}
+/* .social{
+margin-top: 30px;
+display: flex;
+} */
+.social div{
+background: red;
+width: 150px;
+border-radius: 3px;
+padding: 5px 10px 10px 5px;
+background-color: rgba(255,255,255,0.27);
+color: #eaf0fb;
+text-align: center;
+}
+.social div:hover{
+background-color: rgba(255,255,255,0.47);
+}
+.social .fb{
+margin-left: 25px;
+}
+.social i{
+margin-right: 4px;
+}
+
+#emaillogin{
+  margin-top: 20%;
+}
+button {
+  background-color: #050505;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 20%;
+  opacity: 0.9;
+  border-radius: 12px;
+}
+.signupbtn {
+  
+  width: 100%;
+}
+
+
+.forgotpassword{
+  text-align: right;
+  margin-top: 10px;
+  color: #565656;
+}
+.donthaveaccount{
+  text-align: center;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+ 
+  border-width: 2px;
+  border-style: double;
+  border-color: #000;
+}
+
+li {
+  float: left;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: rgb(8, 7, 7);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: rgb(221, 92, 92);
+}
+
+.active {
+  background-color: #030504;
+  color: #e3ebe8;
+}
+
+</style>
+<body>
+<div style="height: 80px; background-color: #050505;">
+    <h1 style="color: aliceblue; padding-top: 25px;"> <center>Applicant</center></h1>
+</div>
+<div style="padding-left: 20%; padding-right: 20%; padding-top: 5px;">
+
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <ul>
+    <li style="float:right"><a class="active" href="MyProfile.html">My Profile</a></li>
+    <li style="float:right"><a  href="FindJobs.html">Find Jobs</a></li>
+    <li style="float:right"><a  href="Screen6.html">My Jobs</a></li>
+  </ul>
+          
+<div clasname="container">
+    <div class="jobsofuser">User Data</div>
+</div>
+<div class="emaildiv"><p><span class="emailspan">Email:</span><span>dummy@gmail.com</span></p></div>
+<div class="contactdiv"><p><span class="contactspan">Contact:</span><span>03333-3333333</span></p></div>
+<div class="educationdiv">Education:</div>
+<div class="edudiv">-BS - AIR UNI</div>
+<div class="edudiv">-MS - In Progress</div>
+<div class="skillsdev">Skills:</div>
+<div class="skilldiv">- MySql</div>
+<div class="skilldiv">- Python</div>
+<div class="skilldiv">- DevOps</div>
+<div class="experiencediv">Experience:</div>
+<div class="exp1">- Frontend Developer - Synergy</div>
+<div class="exp1">- SQA - Techverx</div>
+<button type="button" class="signupbtn" style="padding-top: 2%; width: 20%;" onclick="location.href='UpdateProfile.html'">Update Profile</button>
+<center>
+  <button type="submit" class="signupbtn" style="padding-top: 2%; width: 20%;" onClick="location.href='index.html'">Sign Out</button></center>
+
+</body>
+</html>

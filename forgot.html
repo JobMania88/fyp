@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<style>
+button {
+  background-color: #050505;
+
+  color: white;
+  padding: 8px 5px;
+  margin: 4px 0;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  opacity: 0.9;
+  border-radius: 12px;
+}
+
+input[type=text], input[type=password] {
+  width: 40%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+</style>
+<body>
+<div style="height: 80px; background-color: #050505;">
+    <h1 style="color: aliceblue; padding-top: 25px;"> <center>Change Password</center></h1>
+</div>
+<div style="padding-left: 20%; padding-right: 20%; padding-top: 5px;">
+    <h2> <center>Enter Details</center></h2>
+
+    <label for="Email"><b>Enter Email</b></label><br>
+    <input type="text" placeholder="Enter Email"  name="Email" required><br>
+
+    <label for="Password"><b>Enter Password</b></label><br>
+    <input type="password"placeholder="Enter Password"  name="Password" required><br>
+
+    <label for="Password"><b>Confirm Password</b></label><br>
+    <input type="password" placeholder="Enter Password" name="Password" required><br>
+
+    <div style="float: right; width: 30%;">
+    <button type="submit" class="signupbtn" onClick="location.href='index.html'">Back</button>
+    <button type="submit" class="signupbtn" onClick="location.href='index.html'">Update</button>
+    </div>
+</div>
+
+</body>
+</html>

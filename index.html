@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+/* Set a style for all buttons */
+button {
+  background-color: #426de4;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 20%;
+  opacity: 0.9;
+  border-radius: 12px;
+}
+
+button:hover {
+  opacity:1;
+}
+
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding-left: 30%;
+  padding-right: 30%;
+  padding-top: 5%;
+}
+
+/* The Modal (background) */
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+</style>
+<body>
+    <div class="container">
+      <h1><center> Welcome</center></h1>
+      <hr>
+
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <div class="clearfix">
+      <center>
+        <button type="submit" class="signupbtn" onClick="location.href='Screen1.html'">Sign In</button>
+      </center>
+     </div>
+    <div style="padding-top: 20px; padding-bottom: 10px;">
+    <a href="forgot.html" ><center> Forgotten password?</center></a></div>
+    <hr>
+    <div class="clearfix">
+      <center>
+        <button type="submit" style="background-color: rgb(18, 219, 102);" class="signupbtn" onClick="location.href='signup.html'">Create new Account</button>
+      </center>
+     </div>
+  </form>
+</div>
+
+</body>
+
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/myjQuery.js"></script>
+
+</html>

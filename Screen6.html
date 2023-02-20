@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+<style>
+.navbar {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  overflow: auto;
+}
+
+/* Navigation links */
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: blue;
+  text-decoration: none;
+  font-size: 17px;
+  width: 25%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+  text-align: center; /* If you want the text to be centered */
+}
+
+/* Add a background color on mouse-over */
+.navbar a:hover {
+  border-bottom-style: solid;
+  border-bottom-color: blue;
+}
+
+
+/* Style the current/active link */
+.navbar a.active {
+ 
+  border-bottom-style: solid;
+  border-bottom-color: blue;
+ 
+
+}
+
+/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left; /* If you want the text to be left-aligned on small screens */
+  }
+}
+
+.jobsofuser{
+  font-weight: 500;
+  margin-left: 5%;
+  margin-top: 50px;
+  margin-bottom: 3%;
+  color: #000;
+}
+
+.card-body
+{
+  background: #ECE8E7;
+}
+
+#card2{
+  margin-top: 2%;
+}
+
+
+
+#cardbtn
+{
+  text-align: center;
+  margin-left: 50%;
+  align-items: center; 
+  /* align-self: center; */
+  /* align-content: center; */
+  /* ruby-align: center; */
+  
+}
+.main {
+  text-align: center;
+  justify-content: center;
+  
+  padding-top: 90px;
+ 
+}
+
+
+
+.organization{
+  margin-top: 50px;
+  background-color: #050218;
+  border: none;
+  width: 50%;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 15px;
+
+}
+.welcome
+{
+  position:relative;
+  font-size: 35px;
+
+}
+.applicant{
+  margin-top: 100px;
+  background-color: #050218;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  width: 50%;
+  font-size: 16px;
+
+  border-radius: 12px;
+  /* position:relative; */
+}
+
+.header {
+  padding: 20px;
+  text-align: center;
+  background: #000000;
+  color: white;
+  font-size: 30px;
+}
+
+.general_details {
+  padding: 20px;
+  text-align: center;
+ margin-bottom: 50px;
+  font-size: 30px;
+  font-weight: bold;
+}
+.job_details{
+  padding: 20px;
+  text-align: center;
+ margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.Cancel{
+  align-items: center;
+  border: #000;
+}
+
+.form-control
+{
+  width: 30%;
+  border-radius: 0%;
+  background-color: #ECE8E7;
+}
+
+/* Style the navigation menu */
+.navbar {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  overflow: auto;
+}
+
+/* Navigation links */
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: blue;
+  text-decoration: none;
+  font-size: 17px;
+  width: 25%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+  text-align: center; /* If you want the text to be centered */
+}
+
+/* Add a background color on mouse-over */
+.navbar a:hover {
+  border-bottom-style: solid;
+  border-bottom-color: blue;
+}
+
+
+/* Style the current/active link */
+.navbar a.active {
+ 
+  border-bottom-style: solid;
+  border-bottom-color: blue;
+ 
+
+}
+
+/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left; /* If you want the text to be left-aligned on small screens */
+  }
+}
+
+.jobsofuser{
+  font-weight: 500;
+  margin-left: 5%;
+  margin-top: 50px;
+  margin-bottom: 3%;
+  color: #000;
+}
+
+.card-body
+{
+  background: #ECE8E7;
+}
+
+#card2{
+  margin-top: 2%;
+}
+
+
+
+#cardbtn
+{
+  text-align: center;
+  margin-left: 50%;
+  align-items: center; 
+  /* align-self: center; */
+  /* align-content: center; */
+  /* ruby-align: center; */
+  
+}
+
+.loginmain{
+  height: 100%;
+  width: 100%;
+  
+  background-color:black;
+}
+
+
+#cont
+{
+  margin: 0 auto; /* Added */
+  float: none; /* Added */
+  margin-bottom: 10px; /* Added */
+}
+
+
+
+.background{
+  width: 430px;
+  height: 520px;
+  color: #000;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  top: 50%;
+}
+.background .shape{
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+
+form *{
+  font-family: 'Poppins',sans-serif;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  outline: none;
+  border: none;
+}
+
+.usernamediv{
+  margin: 5%;
+}
+.emaildiv
+{
+  margin-top: 3%;
+  margin-left: 5%;
+}
+.emailspan{
+  font-weight: bold;
+}
+.contactdiv{
+  margin-top: 2%;
+  margin-left: 5%;
+}
+
+.educationdiv{
+  margin-top: 2%;
+  margin-left: 5%;
+  font-weight: bold;
+}
+.edudiv{
+  
+  margin-left: 5%;
+}
+
+.skillsdev
+{
+  margin-top: 2%;
+  font-weight: bold;
+  margin-left: 5%;
+}
+
+.skilldiv
+{
+
+margin-left: 5%;
+}
+
+.experiencediv{
+  margin-top: 2%;
+  margin-left: 5%;
+  font-weight: bold;
+}
+.exp1
+{
+  margin-left: 5%;
+ 
+}
+.updateprofilebtn
+{
+  margin-top: 3%;
+  margin-left: 50%;
+  width: 200px;
+  border-radius: 0%;
+
+}
+.contactspan
+{
+  font-weight: bold;
+}
+label{
+  display: block;
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+}
+
+::placeholder{
+  color: #000000;
+}
+
+/* .social{
+margin-top: 30px;
+display: flex;
+} */
+.social div{
+background: red;
+width: 150px;
+border-radius: 3px;
+padding: 5px 10px 10px 5px;
+background-color: rgba(255,255,255,0.27);
+color: #eaf0fb;
+text-align: center;
+}
+.social div:hover{
+background-color: rgba(255,255,255,0.47);
+}
+.social .fb{
+margin-left: 25px;
+}
+.social i{
+margin-right: 4px;
+}
+
+#emaillogin{
+  margin-top: 20%;
+}
+button {
+  background-color: #050505;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 20%;
+  opacity: 0.9;
+  border-radius: 12px;
+}
+.signupbtn {
+  
+  width: 100%;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+ 
+  border-width: 2px;
+  border-style: double;
+  border-color: #000;
+}
+
+li {
+  float: left;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: rgb(8, 7, 7);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: rgb(221, 92, 92);
+}
+
+.active {
+  background-color: #030504;
+  color: #e3ebe8;
+}
+
+
+</style>
+<body>
+<div style="height: 80px; background-color: #050505;">
+    <h1 style="color: aliceblue; padding-top: 25px;"> <center>Applicant</center></h1>
+</div>
+<div style="padding-left: 20%; padding-right: 20%; padding-top: 5px;">
+
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <ul>
+    <li style="float:right"><a href="MyProfile.html">My Profile</a></li>
+    <li style="float:right"><a  href="FindJobs.html">Find Jobs</a></li>
+    <li style="float:right"><a class="active" href="Screen6.html">My Jobs</a></li>
+  </ul>
+
+            <div class="Search" style="padding-top: 15px;">
+              <input type="text" placeholder="Search..">
+            </div>
+          
+<div clasname="container">
+    <div class="jobsofuser">Jobs of Username</div>
+</div>
+<div class="container">
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Software Engineer</h5>
+            <p class="card-text">Islamabad</p>
+            <p class="card-text" style="font-weight: bold;">Description</p>
+            <p class="card-text">We need Software Engineer to work in paced enviroment</p>
+            <p>
+            <span>Status: </span>
+            <span style="color: green;">Hired</span>
+        </p>
+        <center>
+        <button type="submit" class="signupbtn" style="padding-top: 2%; width: 20%; background-color: cornflowerblue;">Update Status</button></center>
+        </center>
+    </div>
+</div>
+</div>
+<div class="container" id="card2">
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Software Engineer</h5><p class="card-text">Islamabad</p>
+            <p class="card-text" style="font-weight: bold;">Description</p>
+            <p class="card-text">We need Software Engineer to work in paced enviroment</p>
+            <p><span>Status: </span><span style="color: red;">Rejected</span>
+              <center>
+                <button type="submit" class="signupbtn" style="padding-top: 2%; width: 20%; background-color: cornflowerblue;">Update Status</button></center>
+                </center> </div>
+    </div>
+    <center>
+      <button type="submit" class="signupbtn" style="padding-top: 2%; width: 20%;" onClick="location.href='index.html'">Sign Out</button></center>
+
+
+</body>
+</html>
